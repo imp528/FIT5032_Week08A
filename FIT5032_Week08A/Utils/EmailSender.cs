@@ -13,12 +13,12 @@ namespace FIT5032_Week08A.Utils
     public class EmailSender
     {
         // Please use your API KEY here.
-        private const String API_KEY = "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";
+        private const String API_KEY = "SG.Oq4AKBEMTAmjZBwhS8yRhA.vNJ_PiXvke3mkmVowTgiNwedC4mh5iIAF1rCjbGP";
 
         public void Send(String toEmail, String subject, String contents, HttpPostedFileBase postedFileBase)
         {
             var client = new SendGridClient(API_KEY);
-            var from = new EmailAddress("ywuu0164@student.monash.edu");
+            var from = new EmailAddress("ywuu064@student.monash.edu");
             var to = new EmailAddress(toEmail, "");
             var plainTextContent = contents;
             var htmlContent = "<p>" + contents + "</p>";
